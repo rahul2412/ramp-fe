@@ -30,18 +30,16 @@ export default function Flag() {
     const currentCharsList = currentChars.split('')
 
     return (
-        <div className='Flag'>
-            {
-                !flag &&
-                <span>Loading...</span>
-            }
+        <div className="Flag">
+          {!flag ? (
+            <span>Loading...</span>
+          ) : (
             <ul>
-                {
-                    currentCharsList.map((ele, idx) =>
-                        <li key={idx}>{ele}</li>
-                    )
-                }
+              {currentCharsList.map((ele, idx) => (
+                <li key={idx}>{ele}</li>
+              ))}
             </ul>
+          )}
         </div>
     )
 }
