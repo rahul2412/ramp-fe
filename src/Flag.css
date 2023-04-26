@@ -1,0 +1,13 @@
+.Flag {
+    padding-left: 50px;
+    padding-top: 50px;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+}
